@@ -4,9 +4,8 @@ namespace NullDev\Examiner\FileParser;
 
 class PhpFileParseResultFactory
 {
-
     /**
-     * Returns new instance of PhpFileParseResult;
+     * Returns new instance of PhpFileParseResult;.
      *
      * @return PhpFileParseResult
      */

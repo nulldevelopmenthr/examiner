@@ -12,6 +12,5 @@ class PhpFileParseResultFactoryTest extends \PHPUnit_Framework_TestCase
         $result = $factory->create();
 
         $this->assertInstanceOf('NullDev\Examiner\FileParser\PhpFileParseResult', $result);
-
     }
 }
