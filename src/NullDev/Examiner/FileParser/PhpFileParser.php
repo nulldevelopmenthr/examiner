@@ -14,7 +14,7 @@ class PhpFileParser
     public function parse($fileName)
     {
         if (!is_file($fileName)) {
-            throw new \Exception('Unknown file ' . $fileName);
+            throw new \Exception('Unknown file '.$fileName);
         }
 
         $result = $this->factory->create();
@@ -27,7 +27,6 @@ class PhpFileParser
         $patternClassDetection     = '/^(final |)class (?<className>[^\s]+)/i';
 
         foreach ($perLineList as $perLine) {
-
             if (preg_match($patternNamespaceDetection, $perLine, $matches)) {
                 $result->setNamespace($matches['namespace']);
             }

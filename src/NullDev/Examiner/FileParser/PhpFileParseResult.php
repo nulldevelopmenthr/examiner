@@ -46,10 +46,9 @@ class PhpFileParseResult
         }
 
         if ($this->getNamespace()) {
-            return $this->getNamespace() . '\\' . $this->getClassName();
+            return $this->getNamespace().'\\'.$this->getClassName();
         }
 
         return $this->getClassName();
-
     }
 }
