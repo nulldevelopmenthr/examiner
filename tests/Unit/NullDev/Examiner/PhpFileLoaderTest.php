@@ -5,7 +5,6 @@ use NullDev\Examiner\PhpFileLoader;
 
 class PhpFileLoaderTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testLoaderUnknownFile()
     {
         $loader = new PhpFileLoader();

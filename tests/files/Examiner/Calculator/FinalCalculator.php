@@ -3,7 +3,6 @@ namespace Examiner\Calculator;
 
 final class FinalCalculator
 {
-
     protected $varA;
     protected $varB;
     protected $varC;

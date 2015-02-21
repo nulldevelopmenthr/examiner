@@ -5,7 +5,6 @@ use NullDev\Examiner\ReflectionClassGenerator;
 
 class ReflectionClassGeneratorTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testNothing()
     {
         $generator = new ReflectionClassGenerator();
@@ -15,6 +14,5 @@ class ReflectionClassGeneratorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('ReflectionClass', $result);
 
         $this->assertEquals(get_class($this), $result->getName());
-
     }
 }

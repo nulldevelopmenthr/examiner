@@ -5,7 +5,6 @@ use NullDev\Examiner\FileParser\PhpFileParseResult;
 
 class PhpFileParseResultTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testGettersAndSettersUsingNamespace()
     {
         $parseResult = new PhpFileParseResult();
@@ -16,7 +15,6 @@ class PhpFileParseResultTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Name\Space', $parseResult->getNamespace());
         $this->assertEquals('ClassName', $parseResult->getClassName());
         $this->assertEquals('Name\Space\ClassName', $parseResult->getFullyQualifiedClassName());
-
     }
 
     public function testGettersAndSettersWithoutNamespace()

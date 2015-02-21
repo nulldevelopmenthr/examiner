@@ -1,12 +1,11 @@
 <?php
 namespace Tests\Unit\NullDev\Examiner\FileSystem\FileParser;
 
-use \Mockery as m;
+use Mockery as m;
 use NullDev\Examiner\FileParser\PhpFileParser;
 
 class PhpFileParserTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testParser()
     {
         $mockResult = m::mock();
